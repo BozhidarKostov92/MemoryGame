@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main_controller.js" charset="utf-8"></script>
+</head>
+<body>
+
+  <div class="text-center pb-3 fw-bolder fs-1 text-secondary m-0">
+    <h3 class="m-0">Score:<span id="result">0</span>
+    </h3>
+  </div>
+
+  <h1 class="text-center text-danger fw-bolder fs-1 pb-4 m-0">Time:
+    <span id="count-time-up" class="text-danger">0:0</span>
+  </h1>
+
+  <h1 class="text-center pb-3 fw-bolder fs-1 px-3 text-primary mb-2 mt-0">
+    <span id="game-status"></span>
+  </h1>
+
+  <div class="grid ps-5 pe-5 m-5">
+  </div>
+
+  <div class="container position-absolute top-0">
+    <div class="row" id="lives">
+        <img src="emojis/life.png" alt="life1" id="life1" style="width: 5% !important;">
+        <img src="emojis/life.png" alt="life2" id="life2" style="width: 5% !important;">
+        <img src="emojis/life.png" alt="life3" id="life3" style="width: 5% !important;">
+        <img src="emojis/life.png" alt="life4" id="life4" style="width: 5% !important;">
+        <img src="emojis/life.png" alt="life5" id="life5" style="width: 5% !important;">
+    </div>
+      <div class="row" id="lives2">
+          <img src="emojis/life.png" alt="life1" id="life6" style="width: 5% !important;">
+          <img src="emojis/life.png" alt="life2" id="life7" style="width: 5% !important;">
+          <img src="emojis/life.png" alt="life3" id="life8" style="width: 5% !important;">
+          <img src="emojis/life.png" alt="life4" id="life9" style="width: 5% !important;">
+          <img src="emojis/life.png" alt="life5" id="life10" style="width: 5% !important;">
+      </div>
+  </div>
+
+  <div id="game-over-modal" class="modal">
+    <div class="modal-content text-center">
+        <p class="text-danger fw-bolder fs-1 pb-4 m-0">Game Over!</p>
+        <p class="text-primary fw-bolder fs-1 pb-4 m-0">Play again?</p>
+        <button type="button" id="yes" class="button text-bg-primary">
+          Yes
+        </button>
+        <button type="button" id="no" class="button text-bg-danger">
+          No
+        </button>
+    </div>
+  </div>
+
+</body>
+</html>
