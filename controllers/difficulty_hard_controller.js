@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const modalContent = document.getElementById("modal-content");
         modalContent.setAttribute("style", 'width: 40% !important;');
         grid.setAttribute("style", 'margin-top: 20% !important; margin-left: 80px !important;');
-        gameOverModal.setAttribute("style", 'padding-top: 150px !important;');
+        gameOverModal.setAttribute("style", 'padding-top: 180px !important;');
 
         document.getElementById('difficulty').innerHTML = "Hard";
     }

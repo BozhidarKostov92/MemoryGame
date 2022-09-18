@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         const modalContent = document.getElementById("modal-content");
         modalContent.setAttribute("style", 'width: 40% !important;');
-        gameOverModal.setAttribute("style", 'padding-top: 150px !important;');
+        gameOverModal.setAttribute("style", 'padding-top: 180px !important;');
         grid.setAttribute("style", 'margin-left: 90px !important;');
 
         document.getElementById('difficulty').innerHTML = "Easy";
