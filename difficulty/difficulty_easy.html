@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Difficulty: Easy</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../controllers/difficulty_easy_controller.js" charset="utf-8"></script>
+</head>
+<body bgcolor="#F8F9FA">
+
+<div class="position-absolute top-0 end-0 text-secondary fw-bolder fs-1 mt-2" id="difficulty">Difficulty: Easy</div>
+
+<div class="text-center pb-3 fw-bolder fs-1 text-secondary m-0">
+    <h3 class="m-0">Score:<span id="result">0</span>
+    </h3>
+</div>
+
+<!--counter-->
+<h1 class="text-center text-danger fw-bolder fs-1 pb-4 m-0">Time:
+    <span id="count-time-up" class="text-danger">0:0</span>
+</h1>
+
+<!--game status-->
+<h1 class="text-center pb-3 fw-bolder fs-1 px-3 text-primary mb-2 mt-0" id="game-status">
+    <span id="game-status-no-match" class="text-danger"></span>
+    <span id="game-status-match"></span>
+</h1>
+
+<!--game cards-->
+<div class="grid pt-5 ps-5 pe-5 m-5 mb-0" style="margin-top: 120px !important"></div>
+
+<!--lives-->
+<div class="container position-absolute top-0">
+    <div class="row" id="lives">
+    </div>
+    <div class="row" id="lives2">
+    </div>
+    <div class="row" id="lives3">
+    </div>
+    <div class="row" id="lives4">
+    </div>
+</div>
+
+<div id="game-over-modal" class="modal">
+    <div class="modal-content text-center" id="modal-content">
+        <p class="text-danger fw-bolder fs-1 pb-4 m-0">Game Over!</p>
+        <p class="text-secondary fw-bolder fs-1 pb-4 m-0">Difficulty: Easy</p>
+        <p class="text-secondary fw-bolder fs-1 pb-4 m-0">Play again?</p>
+        <button type="button" id="yes" class="button-modal green-hover">
+            Yes
+        </button>
+        <button type="button" id="no" class="button-modal ms-4" style="background-color: #800000 !important;">
+            <a href="../index.html" class="red-hover text-white">No</a>
+        </button>
+    </div>
+</div>
+
+</body>
+</html>
