@@ -4,12 +4,38 @@
     <meta charset="UTF-8">
     <title>Delete Account</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Centering styles */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container h2, .container p, .container ol, .container ul {
+            margin: 10px 0;
+        }
+
+        .container ol, .container ul {
+            list-style-position: inside;
+            padding: 0;
+        }
+
+        .background-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body class="background-image">
 
 <div class="container">
-    <h2 class="text-center fs-1 m-3">Request Account Deletion</h2>
-    <p class="text-center fs-3">
+    <h2 class="fs-1 m-3">Request Account Deletion</h2>
+    <p class="fs-3">
         To delete your account and data from "Sudoku and Puzzle King", please:
     </p>
     <ol class="fs-4 m-5">
@@ -20,12 +46,11 @@
     <p class="fs-4">
         When your account is deleted, the following data will be removed:
     </p>
-    <ul>
+    <ul class="fs-4">
         <li>Account details (e.g., username, email)</li>
         <li>Game progress</li>
     </ul>
-    </div>
-
+</div>
 
 </body>
 </html>
